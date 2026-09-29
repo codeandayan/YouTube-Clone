@@ -1,11 +1,45 @@
-.main-container {
+.videos-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 8px;
   row-gap: 22px;
 }
+
+@media (max-width: 450px) {
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 451px) and (max-width: 600px) {
+  .videos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .videos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 901px) {
+  .videos-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.video-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .thumbnail {
-  width: 230px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.picture-and-title {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 4px;
 }
 .video-info {
   display: grid;
@@ -13,9 +47,9 @@
   gap: 8px;
 }
 .profile-picture {
-  width: 32px;
+  width: 34px;
   border-radius: 50%;
-  margin: 5px;
+  margin-left: 5px;
 }
 .video-title {
   font-size: 11px;
@@ -25,7 +59,7 @@
 .channel-name {
   font-size: 9px;
   color: grey;
-  margin: 8px 0px 3px 0px;
+  margin: 8px 0px 1px 0px;
 }
 .video-stats {
   font-size: 9px;
@@ -34,11 +68,13 @@
 
 .video-container {
   display: grid;
-  gap: 8px;
+  gap: 2px;
 }
-.timestamp {
+
+.thumbnail-container {
   position: relative;
 }
+
 .video-length {
   background-color: black;
   color: white;

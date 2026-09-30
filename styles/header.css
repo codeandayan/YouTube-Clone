@@ -7,7 +7,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  left: 0;
+  left: 72px;
   z-index: 10;
   background-color: white;
 }
@@ -19,44 +19,82 @@
   justify-content: center;
   align-items: center;
 }
-.search-icon {
-  width: 24px;
-}
-.voice-search-icon {
-  width: 24px;
-}
 .middle-section {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex: 1;
   max-width: 470px;
   margin-left: 60px;
 }
-search-bar {
-  font-family: Roboto, Arial, sans-serif;
-  height: 40px;
-  flex: 1;
-  width: 0;
-  min-width: 0;
-  padding-left: 12px;
-  font-size: 16px;
-  border: 1px solid rgb(204, 204, 204);
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+.search-icon {
+  width: 24px;
+  margin: 1px 20px;
 }
-search-button {
-  height: 40px;
-  width: 64px;
-  border: 1px solid rgb(204, 204, 204);
+
+.search-button {
+  border: 1px solid #cbc5c5;
+  cursor: pointer;
   border-left: none;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  background-color: rgb(247, 247, 247);
-  cursor: pointer;
-  margin-right: 8px;
+}
+input {
+  flex: 1;
+  padding-left: 8px;
+  border: 1px solid #cbc5c5;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  height: 31px;
+}
+input:focus {
+  outline: none;
+  border: 1px solid #cbc5c5;
+}
+.voice-search-icon {
+  width: 24px;
+}
+.voice-search-container {
+  width: 32px;
+  height: 32px;
+  background-color: #ddddddde;
+  margin-left: 10px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.middle-section .search-button img {
-  height: 24px;
+.right-section img {
+  width: 24px;
+  cursor: pointer;
+}
+.right-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+  width: 180px;
+  position: relative;
+}
+.notifications-container {
+  position: relative;
+}
+.notifications-count {
+  position: absolute;
+  top: -2px;
+  right: -4px;
+
+  width: 15px;
+  height: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 10px;
+  font-weight: bold;
+
+  background-color: red;
+  color: white;
+  border-radius: 50%;
 }

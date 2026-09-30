@@ -13,20 +13,61 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
   </head>
   <body>
+    <nav class="nav">
+      <div>
+        <img src="icons/hamburger-menu.svg" />
+      </div>
+      <div>
+        <img src="icons/home.svg" />
+        <div>Home</div>
+      </div>
+      <div>
+        <img src="icons/explore.svg" />
+        <div>Explore</div>
+      </div>
+      <div>
+        <img src="icons/subscriptions.svg" />
+        <div>Subscriptions</div>
+      </div>
+      <div>
+        <img src="icons/originals.svg" />
+        <div>Originals</div>
+      </div>
+      <div>
+        <img src="icons/youtube-music.svg" />
+        <div>YouTube Music</div>
+      </div>
+      <div>
+        <img src="icons/library.svg" />
+        <div>Library</div>
+      </div>
+    </nav>
+
     <header class="header">
       <div class="left-section">
         <img src="icons/youtube-logo.svg" class="youtube-logo" />
       </div>
       <div class="middle-section">
-        <input type="search" class="search-bar" placeholder="Search" />
+        <input type="search" placeholder="Search" />
         <button class="search-button">
           <img src="icons/search.svg" class="search-icon" />
         </button>
-        <img src="icons/voice-search-icon.svg" class="voice-search-icon" />
+        <div class="voice-search-container">
+          <img src="icons/voice-search-icon.svg" class="voice-search-icon" />
+        </div>
       </div>
-      <div class="right-section">Right</div>
+      <div class="right-section">
+        <img src="icons/upload.svg" />
+        <img src="icons/youtube-apps.svg" />
+        <div class="notifications-container">
+          <img src="icons/notifications.svg" />
+          <span class="notifications-count">3</span>
+        </div>
+        <img src="icons/my-channel.jpeg" />
+      </div>
     </header>
     <main class="videos-grid">
       <div class="video-container">
